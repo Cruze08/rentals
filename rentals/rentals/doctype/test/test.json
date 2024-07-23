@@ -1,0 +1,77 @@
+{
+ "actions": [],
+ "allow_guest_to_view": 1,
+ "allow_rename": 1,
+ "autoname": "format:{naming_series}-{###}",
+ "creation": "2024-07-17 11:16:48.096533",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "name1",
+  "city",
+  "naming_series",
+  "is_published",
+  "route"
+ ],
+ "fields": [
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "default": "Bangalore",
+   "fieldname": "city",
+   "fieldtype": "Select",
+   "label": "City",
+   "options": "Bangalore\nDelhi"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Naming Series"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_published",
+   "fieldtype": "Check",
+   "label": "Is_Published"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
+  }
+ ],
+ "is_published_field": "is_published",
+ "links": [
+  {
+   "link_doctype": "Vehicle",
+   "link_fieldname": "title"
+  }
+ ],
+ "modified": "2024-07-19 11:55:23.155443",
+ "modified_by": "Administrator",
+ "module": "Rentals",
+ "name": "test",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

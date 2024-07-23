@@ -4,6 +4,8 @@ app_publisher = "Ankit"
 app_description = "cars rentals in frappe"
 app_email = "ankit.m0720@gmail.com"
 app_license = "mit"
+
+
 # required_apps = []
 
 # Includes in <head>
